@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>تسجيل طالب</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="background-color: #f8f9fa; font-family: 'Cairo', sans-serif;">
+  
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="padding: 10px 20px;">
+  <a class="navbar-brand" href="index.html" style="color: white;">نظام شئون الطلاب</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navLinks">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="gap: 10px;">
+      <li class="nav-item"><a class="nav-link" href="index.html">تسجيل طالب</a></li>
+      <li class="nav-item"><a class="nav-link" href="students.html">عرض الطلاب</a></li>
+      <li class="nav-item"><a class="nav-link" href="edit.html">تعديل طالب</a></li>
+      <li class="nav-item"><a class="nav-link" href="delete.html">حذف طالب</a></li>
+      <li class="nav-item"><a class="nav-link" href="schedule.html">جدول الحصص</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <div class="container mt-5" style="max-width: 600px; background-color: white; padding: 30px; border-radius: 15px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+    <h3 class="text-center mb-4" style="color: #0d6efd;">تسجيل طالب جديد</h3>
+    <form>
+      <div class="mb-3">
+        <label for="studentName" class="form-label" style="font-weight: bold;">الاسم الكامل</label>
+        <input type="text" class="form-control" id="studentName" placeholder="أدخل الاسم الكامل" style="border-radius: 8px;">
+      </div>
+      <div class="mb-3">
+        <label for="studentID" class="form-label" style="font-weight: bold;">رقم الطالب</label>
+        <input type="text" class="form-control" id="studentID" placeholder="مثال: 20250001" style="border-radius: 8px;">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label" style="font-weight: bold;">البريد الإلكتروني</label>
+        <input type="email" class="form-control" id="email" placeholder="example@student.edu.eg" style="border-radius: 8px;">
+      </div>
+      <div class="mb-3">
+        <label for="major" class="form-label" style="font-weight: bold;">القسم</label>
+        <select class="form-select" id="major" style="border-radius: 8px;">
+          <option selected disabled>اختر القسم</option>
+          <option value="cs">علوم الحاسب</option>
+          <option value="it">تقنية المعلومات</option>
+          <option value="is">نظم المعلومات</option>
+          <option value="ai">ذكاء اصطناعي</option>
+        </select>
+      </div>
+      <div class="d-grid mt-4">
+        <button type="submit" class="btn btn-primary" style="padding: 10px; font-weight: bold;">تسجيل</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
